@@ -1,4 +1,13 @@
 {
-  "skills": [],
+  "skills": [
+    {
+      "name": "react-debug",
+      "namespace": "kenji",
+      "repo": "kenji-protocol/react-debug",
+      "description": "React debugging skill",
+      "tags": ["react", "debugging"],
+      "verified": true
+    }
+  ],
   "stacks": []
 }
