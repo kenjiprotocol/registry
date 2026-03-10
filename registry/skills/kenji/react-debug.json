@@ -1,1 +1,6 @@
-
+{
+  "name": "react-debug",
+  "repo": "kenjiprotocol/react-debug",
+  "description": "React debugging skill",
+  "tags": ["react", "debugging"]
+}
