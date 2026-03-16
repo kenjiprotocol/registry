@@ -1,5 +1,9 @@
 {
   "name": "ai-saas-stack",
-  "repo": "kenjiprotocol/ai-saas-stack",
-  "description": "AI SaaS development stack"
+  "description": "AI SaaS development stack",
+  "skills": [
+    "kenji/react-debug",
+    "kenji/docker-skill",
+    "someone/auth-skill"
+  ]
 }
