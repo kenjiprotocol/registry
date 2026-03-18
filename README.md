@@ -1,239 +1,150 @@
-# Kenji Protocol
+# Kenji Registry
 
-**Kenji** is a CLI for installing and managing AI agent instruction sets.
+The **Kenji Registry** is a GitHub-native index of AI agent skills and stacks.
 
-Instead of copying prompts, rules, or SKILL files across projects, Kenji allows you to install them directly into your project with a simple command.
+It enables users to:
 
-> Think of it as package management for AI agent capabilities.
+- Discover skills
+- Install skills via CLI
+- Install curated stacks
+- Share reusable agent capabilities
+
+The registry is powered entirely by the file structure of this repository.
 
 ---
 
-## Installation
+## Registry Structure
 
-```bash
-npm install -g @kenji-protocol/kenji
+```
+skills/
+  <namespace>/
+    skill-name.json
+stacks/
+  <namespace>/
+    stack-name.json
 ```
 
-Verify installation:
+Each namespace is typically a GitHub username or organization name.
 
-```bash
-kenji doctor
+---
+
+## Namespace Rules
+
+- Namespace must match: `[a-zA-Z0-9_-]`
+- One namespace per folder
+- Skill and stack filenames must be unique inside a namespace
+- Recommended: use your GitHub username or org name
+
+**Example:**
+
+```
+skills/
+  kenji/
+    react-debug.json
 ```
 
 ---
 
-## What Kenji Installs
+## Skill Definition Format
 
-Kenji installs instruction sets such as:
+**File location:**
 
-- `SKILL.md`
-- prompt files
-- agent rules
-- development workflows
-
-These are installed into your project so AI agents can access them during development.
-
----
-
-## Core Commands
-
-### Search the registry
-
-```bash
-kenji search <keyword>
+```
+skills/<namespace>/<skill-name>.json
 ```
 
 **Example:**
+
+```json
+{
+  "name": "react-debug",
+  "description": "React debugging skill for AI agents",
+  "repo": "someuser/react-debug-skill",
+  "entry": "SKILL.md",
+  "tags": ["react", "debugging"]
+}
+```
+
+### Fields
+
+| Field | Required | Description |
+|---|---|---|
+| `name` | yes | Skill identifier |
+| `description` | yes | Short explanation |
+| `repo` | yes | GitHub repo containing skill |
+| `entry` | optional | Specific instruction file to install |
+| `tags` | optional | Search keywords |
+
+If `entry` is omitted, Kenji installs all non-README `.md` files in the repo.
+
+---
+
+## Stack Definition Format
+
+**File location:**
+
+```
+stacks/<namespace>/<stack-name>.json
+```
+
+**Example:**
+
+```json
+{
+  "name": "ai-saas-stack",
+  "description": "Starter stack for building AI SaaS apps",
+  "skills": [
+    "kenji/react-debug",
+    "anotheruser/backend-prompts",
+    "https://raw.githubusercontent.com/user/repo/main/SKILL.md"
+  ]
+}
+```
+
+### Fields
+
+| Field | Required | Description |
+|---|---|---|
+| `name` | yes | Stack identifier |
+| `description` | optional | Stack purpose |
+| `skills` | yes | Array of skill references |
+
+Skill references can be:
+
+- `namespace/skill`
+- `user/repo`
+- raw GitHub URL
+- GitHub tree URL
+
+---
+
+## How to Add a Skill or Stack
+
+1. Fork this repository
+2. Create a JSON file in the correct folder
+3. Commit and open a Pull Request
+4. Once merged, the item becomes available globally via CLI
+
+**Example usage after merge:**
 
 ```bash
 kenji search react
+kenji install namespace/react-debug
 ```
+
+Registry changes become available after cache refresh.
 
 ---
 
-### Inspect a skill
+## Registry Philosophy
 
-```bash
-kenji info <name>
-```
+Kenji Registry is:
 
-**Examples:**
+- GitHub-native
+- open and transparent
+- file-driven
+- infrastructure-focused
 
-```bash
-kenji info kenji/react-debug
-kenji info user/repo
-```
+It is not a centralized database.
 
----
-
-### Install a skill
-
-Kenji supports multiple install sources.
-
-#### Registry
-
-```bash
-kenji install react-debug
-```
-
-or
-
-```bash
-kenji install kenji/react-debug
-```
-
----
-
-#### GitHub repo
-
-```bash
-kenji install user/repo
-```
-
-**Example:**
-
-```bash
-kenji install anthropics/prompt-engineering
-```
-
----
-
-#### Raw instruction file
-
-```bash
-kenji install https://raw.githubusercontent.com/.../SKILL.md
-```
-
----
-
-### Listing installed skills
-
-**Local project skills:**
-
-```bash
-kenji list
-```
-
-**Global skills:**
-
-```bash
-kenji list --global
-```
-
----
-
-### Removing a skill
-
-**Local:**
-
-```bash
-kenji remove <skill>
-```
-
-**Global:**
-
-```bash
-kenji remove <skill> --global
-```
-
----
-
-## Stacks
-
-Stacks allow installing multiple skills together.
-
-**Create a stack:**
-
-```bash
-kenji stack create saas-stack
-```
-
-**Add skills:**
-
-```bash
-kenji stack add saas-stack user/repo
-```
-
-**Install stack:**
-
-```bash
-kenji stack install saas-stack
-```
-
-**Export stack:**
-
-```bash
-kenji stack export saas-stack
-```
-
-**Import stack:**
-
-```bash
-kenji stack import user/repo
-```
-
----
-
-## Registry Cache
-
-Kenji caches the registry locally for performance.
-
-Refresh the cache manually:
-
-```bash
-kenji registry update
-```
-
----
-
-## Project vs Global Skills
-
-Kenji supports two installation modes.
-
-### Project install *(default)*
-
-Skills install into the current project folder so agents can access them.
-
-```
-./.kenji/skills/
-```
-
----
-
-### Global install
-
-```bash
-kenji install <skill> --global
-```
-
-Installed to:
-
-```
-~/.kenji/skills/
-```
-
----
-
-## Registry
-
-Kenji's registry is stored on GitHub:
-
-[github.com/kenjiprotocol/registry](https://github.com/kenjiprotocol/registry)
-
-Skills and stacks are indexed there and discovered through the CLI.
-
----
-
-## Vision
-
-Kenji aims to become the standard infrastructure for distributing:
-
-- AI agent skills
-- development instruction sets
-- reusable agent workflows
-
----
-
-## License
-
-MIT
+It is an index that points to public skill repositories.
