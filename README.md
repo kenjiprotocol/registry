@@ -160,15 +160,6 @@ Once accepted, the registry's skills and stacks appear in search results alongsi
 
 ---
 
-## How to Contribute to the Official Registry
-
-1. Fork this repository: [kenjiprotocol/registry](https://github.com/kenjiprotocol/registry)
-2. Create a JSON file in `skills/<your-namespace>/` or `stacks/<your-namespace>/`
-3. Commit and open a Pull Request
-4. Once merged, the item is available globally via the Kenji CLI
-
----
-
 ## Registry Philosophy
 
 The Kenji Registry is:
