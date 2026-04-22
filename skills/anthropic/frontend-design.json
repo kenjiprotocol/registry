@@ -1,0 +1,14 @@
+{
+  "name": "frontend-design",
+  "namespace": "anthropic",
+  "description": "name: frontend-design",
+  "repo": "anthropics/skills",
+  "entry": "skills/frontend-design/SKILL.md",
+  "tags": [
+    "claude",
+    "frontend",
+    "react",
+    "ui",
+    "ux"
+  ]
+}

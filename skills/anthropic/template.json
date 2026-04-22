@@ -1,0 +1,10 @@
+{
+  "name": "template",
+  "namespace": "anthropic",
+  "description": "name: template-skill",
+  "repo": "anthropics/skills",
+  "entry": "template/SKILL.md",
+  "tags": [
+    "claude"
+  ]
+}

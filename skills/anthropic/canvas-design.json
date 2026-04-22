@@ -1,0 +1,12 @@
+{
+  "name": "canvas-design",
+  "namespace": "anthropic",
+  "description": "name: canvas-design",
+  "repo": "anthropics/skills",
+  "entry": "skills/canvas-design/SKILL.md",
+  "tags": [
+    "claude",
+    "nextjs",
+    "ui"
+  ]
+}

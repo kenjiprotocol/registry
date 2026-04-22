@@ -1,0 +1,10 @@
+{
+  "name": "theme-factory",
+  "namespace": "anthropic",
+  "description": "name: theme-factory",
+  "repo": "anthropics/skills",
+  "entry": "skills/theme-factory/SKILL.md",
+  "tags": [
+    "ui"
+  ]
+}

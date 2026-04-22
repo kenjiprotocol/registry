@@ -1,0 +1,15 @@
+{
+  "name": "algorithmic-art",
+  "namespace": "anthropic",
+  "description": "name: algorithmic-art",
+  "repo": "anthropics/skills",
+  "entry": "skills/algorithmic-art/SKILL.md",
+  "tags": [
+    "claude",
+    "javascript",
+    "nextjs",
+    "nodejs",
+    "ui",
+    "ux"
+  ]
+}

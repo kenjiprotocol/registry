@@ -1,0 +1,15 @@
+{
+  "name": "xlsx",
+  "namespace": "anthropic",
+  "description": "name: xlsx",
+  "repo": "anthropics/skills",
+  "entry": "skills/xlsx/SKILL.md",
+  "tags": [
+    "api",
+    "database",
+    "python",
+    "testing",
+    "ui",
+    "ux"
+  ]
+}

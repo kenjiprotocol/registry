@@ -1,0 +1,19 @@
+{
+  "name": "mcp-builder",
+  "namespace": "anthropic",
+  "description": "name: mcp-builder",
+  "repo": "anthropics/skills",
+  "entry": "skills/mcp-builder/SKILL.md",
+  "tags": [
+    "api",
+    "authentication",
+    "mcp",
+    "nextjs",
+    "nodejs",
+    "prompting",
+    "python",
+    "testing",
+    "typescript",
+    "ui"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "web-artifacts-builder",
+  "namespace": "anthropic",
+  "description": "name: web-artifacts-builder",
+  "repo": "anthropics/skills",
+  "entry": "skills/web-artifacts-builder/SKILL.md",
+  "tags": [
+    "claude",
+    "frontend",
+    "javascript",
+    "nodejs",
+    "react",
+    "testing",
+    "typescript",
+    "ui"
+  ]
+}

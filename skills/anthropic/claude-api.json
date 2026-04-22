@@ -1,0 +1,18 @@
+{
+  "name": "claude-api",
+  "namespace": "anthropic",
+  "description": "name: claude-api",
+  "repo": "anthropics/skills",
+  "entry": "skills/claude-api/SKILL.md",
+  "tags": [
+    "api",
+    "claude",
+    "mcp",
+    "nextjs",
+    "openai",
+    "prompting",
+    "python",
+    "typescript",
+    "ui"
+  ]
+}
