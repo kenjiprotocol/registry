@@ -1,7 +1,6 @@
 {
   "name": "docx",
   "namespace": "anthropic",
-  "description": "name: docx",
   "repo": "anthropics/skills",
   "entry": "skills/docx/SKILL.md",
   "tags": [
