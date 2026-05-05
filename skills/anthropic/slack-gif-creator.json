@@ -1,7 +1,6 @@
 {
   "name": "slack-gif-creator",
   "namespace": "anthropic",
-  "description": "name: slack-gif-creator",
   "repo": "anthropics/skills",
   "entry": "skills/slack-gif-creator/SKILL.md",
   "tags": [
