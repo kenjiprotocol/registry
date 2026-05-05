@@ -1,5 +1,6 @@
 {
   "registries": [
-    "kenjiprotocol/registry"
+    "kenjiprotocol/registry",
+    "revanthjanumula/kenji-registry"
   ]
 }
