@@ -1,7 +1,6 @@
 {
   "name": "internal-comms",
   "namespace": "anthropic",
-  "description": "name: internal-comms",
   "repo": "anthropics/skills",
   "entry": "skills/internal-comms/SKILL.md",
   "tags": [
