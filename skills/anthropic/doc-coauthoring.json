@@ -1,7 +1,6 @@
 {
   "name": "doc-coauthoring",
   "namespace": "anthropic",
-  "description": "name: doc-coauthoring",
   "repo": "anthropics/skills",
   "entry": "skills/doc-coauthoring/SKILL.md",
   "tags": [
