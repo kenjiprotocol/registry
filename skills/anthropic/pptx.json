@@ -1,7 +1,6 @@
 {
   "name": "pptx",
   "namespace": "anthropic",
-  "description": "name: pptx",
   "repo": "anthropics/skills",
   "entry": "skills/pptx/SKILL.md",
   "tags": [
