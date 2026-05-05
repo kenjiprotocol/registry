@@ -1,7 +1,6 @@
 {
   "name": "skill-creator",
   "namespace": "anthropic",
-  "description": "name: skill-creator",
   "repo": "anthropics/skills",
   "entry": "skills/skill-creator/SKILL.md",
   "tags": [
