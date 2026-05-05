@@ -1,7 +1,6 @@
 {
   "name": "brand-guidelines",
   "namespace": "anthropic",
-  "description": "name: brand-guidelines",
   "repo": "anthropics/skills",
   "entry": "skills/brand-guidelines/SKILL.md",
   "tags": [
