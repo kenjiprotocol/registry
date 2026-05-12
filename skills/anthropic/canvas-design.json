@@ -5,15 +5,15 @@
   "repo": "anthropics/skills",
   "entry": "skills/canvas-design/SKILL.md",
   "tags": [
-    "visual-design",
-    "graphic-design",
-    "poster-design",
-    "digital-art",
-    "layout-design",
-    "print-design",
+    "visual design",
+    "graphic design",
+    "poster design",
+    "digital art",
+    "layout design",
+    "print design",
     "composition",
-    "static-design",
-    "creative-direction",
-    "pdf-generation"
+    "static design",
+    "creative direction",
+    "pdf"
   ]
 }
