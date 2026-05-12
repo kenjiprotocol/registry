@@ -5,15 +5,15 @@
   "repo": "anthropics/skills",
   "entry": "skills/algorithmic-art/SKILL.md",
   "tags": [
-  "p5js",
-  "generative-art",
-  "algorithmic-art",
-  "creative-coding",
-  "flow-fields",
-  "particle-systems",
-  "seeded-randomness",
-  "interactive-art",
-  "procedural-generation",
-  "visual-coding"
+    "p5js",
+    "generative-art",
+    "algorithmic-art",
+    "creative-coding",
+    "flow-fields",
+    "particle-systems",
+    "seeded-randomness",
+    "interactive-art",
+    "procedural-generation",
+    "visual-coding"
   ]
 }
