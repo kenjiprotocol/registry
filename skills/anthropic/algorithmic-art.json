@@ -1,14 +1,19 @@
 {
   "name": "algorithmic-art",
   "namespace": "anthropic",
+  "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
   "repo": "anthropics/skills",
   "entry": "skills/algorithmic-art/SKILL.md",
   "tags": [
-    "claude",
-    "javascript",
-    "nextjs",
-    "nodejs",
-    "ui",
-    "ux"
+  "p5js",
+  "generative-art",
+  "algorithmic-art",
+  "creative-coding",
+  "flow-fields",
+  "particle-systems",
+  "seeded-randomness",
+  "interactive-art",
+  "procedural-generation",
+  "visual-coding"
   ]
 }
