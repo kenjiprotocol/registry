@@ -4,13 +4,8 @@
   "repo": "anthropics/skills",
   "entry": "skills/skill-creator/SKILL.md",
   "tags": [
-    "authentication",
+    "skill",
     "claude",
-    "mcp",
-    "nextjs",
-    "prompting",
-    "python",
-    "testing",
-    "ui"
+    "create"
   ]
 }
