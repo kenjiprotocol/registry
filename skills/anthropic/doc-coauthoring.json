@@ -4,11 +4,6 @@
   "repo": "anthropics/skills",
   "entry": "skills/doc-coauthoring/SKILL.md",
   "tags": [
-    "authentication",
-    "claude",
-    "mcp",
-    "nextjs",
-    "testing",
-    "ui"
+    "claude"
   ]
 }
