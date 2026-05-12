@@ -1,7 +1,17 @@
 {
   "name": "react-debug",
-  "repo": "kenjiprotocol/react-debug",
-  "entry": "SKILL.md",
-  "description": "React debugging skill",
-  "tags": ["react", "debugging"]
+  "namespace": "Kenji",
+  "description": "Use this skill when debugging React, Next.js, or frontend UI issues. Trigger for rendering bugs, hydration mismatches, broken state updates, hook issues, infinite re-renders, Tailwind/CSS problems, client/server component issues, event handling bugs, routing issues, performance bottlenecks, animation glitches, layout breakage, or build/runtime frontend errors. Use especially when users mention React errors, console warnings, unexpected UI behavior, visual inconsistencies, stale state, failed interactions, or broken frontend logic. Focus on root-cause analysis and minimal targeted fixes instead of rewriting large sections of the application.",
+  "repo": "kenjiprotocol/skills",
+  "entry": "react-debug/SKILL.md",
+  "tags": [
+    "react",
+    "nextjs",
+    "frontend debugging",
+    "ui debugging",
+    "hydration errors",
+    "tailwindcss",
+    "rendering bugs",
+    "css debugging",
+  ]
 }
